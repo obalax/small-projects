@@ -1,0 +1,44 @@
+
+body {
+  background-color: white;
+  color: #003399;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.timeParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 70px;
+  position: relative;
+  display: block;
+  color: #003399;
+}
+
+.timeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 175px;
+  width: 400px;
+  border: 10px solid #003399;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .timeContainer {
+  border: 5px solid #003399;
+
+  }
+}

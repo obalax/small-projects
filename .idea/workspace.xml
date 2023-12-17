@@ -29,7 +29,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/babanila/IdeaProjects/small-projects/clicker-app/public",
+    "last_opened_file_path": "/Users/babanila/IdeaProjects/small-projects/digital-clock-app/src",
     "settings.editor.selected.configurable": "configurable.group.language",
     "show.migrate.to.gradle.popup": "false"
   },
@@ -43,6 +43,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/digital-clock-app/src" />
+      <recent name="$PROJECT_DIR$/digital-clock-app/public" />
+      <recent name="$PROJECT_DIR$/digital-clock-app" />
       <recent name="$PROJECT_DIR$/clicker-app/public" />
     </key>
   </component>
