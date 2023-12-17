@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<style>
+    /* Header css */
+    .bd-navbar {
+        min-height: 4rem;
+        background-color: #040456;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .section-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    .form-element {
+        margin: 5px;
+        min-width: 200px;
+        display: flex;
+    }
+
+    .form-label {
+        min-width: 150px;
+    }
+
+    .id-card-container {
+        display: none;
+    }
+
+    .card-container {
+        width: 90vw;
+        height: 300px;
+        border-radius: 10px;
+        margin: 10px;
+        background: #fceeb5;
+        font-family: Abel, Arial, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+    }
+
+    .card-wrapper {
+        width: 80vw;
+        height: 250px;
+        background-color: #fff;
+        background: linear-gradient(#f8f8f8, #fff);
+        box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        margin: 1.5rem;
+        display: flex;
+    }
+
+    .user-card {
+        width: 30vw;
+        height: 100%;
+        position: relative;
+        background: linear-gradient(#92bca6, #a2ccb6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .general-information {
+        width: 60vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .user-photo {
+        font-size: 7em;
+    }
+
+    .card-element {
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .card-name {
+        font-size: 1.5rem;
+    }
+
+    .college-name {
+        font-size: 1.2rem;
+    }
+
+    .cardLocation{
+        font-size : 1.2rem;
+    }
+
+    .generateButton {
+        background-color: #26863c;
+        color:white;
+    }
+</style>
+<body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <div class="text-light w-100 h3 text-center">ID Card generator</div>
+    </header>
+
+    <div class="container d-flex">
+        <div class="section-container col-6 p-4">
+            <div class="text-center font-weight-bold">
+                <h3>Input form</h3>
+            </div>
+            <form onsubmit="return false">
+                <div class="form-element py-3">
+                    <label class="form-label">
+                        Enter Name:
+                    </label>
+                    <input type="text" id="name" />
+                </div>
+                <div class="form-element py-3">
+                    <label class="form-label">
+                        Enter College Name:
+                    </label>
+                    <input type="text" id="collegeName" />
+                </div>
+                <div class="form-element py-3">
+                    <label class="form-label">
+                        Enter Location:
+                    </label>
+                    <input type="text" id="location" />
+                </div>
+                <button onclick="generateCard()" type="button" class="btn generateButton">Generate Card</button>
+            </form>
+        </div>
+
+        <div class="section-container col-6">
+            <div class="id-card-container" id="collegeCard">
+                <div class="text-center">
+                    <h3>Generated Card</h3>
+                </div>
+                <div class="card-container">
+                    <div class="card-wrapper">
+                        <div class="user-card">
+                            <span class="user-photo">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                        <div class="general-information">
+                            <div class="card-element card-name">
+                                <span>Name:</span>
+                                <span id="cardName"></span>
+                            </div>
+                            <div class="card-element college-name">
+                                <span>College Name:</span>
+                                <span id="cardCollegeName"></span>
+                            </div>
+                            <div class="card-element college-name">
+                                <span>Location:</span>
+                                <span id="cardLocation"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function generateCard() {
+        const nameElement = document.getElementById("name");
+        const nameValue = nameElement.value;
+
+        const cardNameElement = document.getElementById("cardName");
+        cardNameElement.innerHTML = nameValue;
+
+        const collegeNameValue = document.getElementById("collegeName").value;
+        document.getElementById("cardCollegeName").innerHTML = collegeNameValue;
+
+        const locationValue = document.getElementById("location").value;
+        document.getElementById("cardLocation").innerHTML = locationValue;
+
+        document.getElementById("collegeCard").style.display = "block";
+    }
+</script>
+</html>
