@@ -13,6 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2ZeQ7Q7NadjhVenhLazISXVkX6Z" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -29,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/babanila/IdeaProjects/small-projects/digital-clock-app/src",
+    "last_opened_file_path": "/Users/babanila/IdeaProjects/small-projects/user-list-app",
     "settings.editor.selected.configurable": "configurable.group.language",
     "show.migrate.to.gradle.popup": "false"
   },
@@ -43,10 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-list-app" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/digital-clock-app/src" />
       <recent name="$PROJECT_DIR$/digital-clock-app/public" />
       <recent name="$PROJECT_DIR$/digital-clock-app" />
-      <recent name="$PROJECT_DIR$/clicker-app/public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
